@@ -1,0 +1,5 @@
+﻿     Principal    | Permission | Operation | Resource Type | Resource Name | Pattern Type  
+------------------+------------+-----------+---------------+---------------+---------------
+  User:sa-6ozgr22 | ALLOW      | DESCRIBE  | TOPIC         | desafio       | PREFIXED      
+  User:sa-6ozgr22 | ALLOW      | READ      | GROUP         | desafio       | PREFIXED      
+  User:sa-6ozgr22 | ALLOW      | READ      | TOPIC         | desafio       | PREFIXED      

@@ -1,0 +1,23 @@
+{
+  "name": "desafio-cdc-postgres",
+  "connector.class": "PostgresCdcSourceV2",
+  "kafka.auth.mode": "SERVICE_ACCOUNT",
+  "kafka.service.account.id": "${PRODUCER_SA_ID}",
+  "database.hostname": "${PG_HOST}",
+  "database.port": "5432",
+  "database.user": "cdc_user",
+  "database.password": "${PG_CDC_PASSWORD}",
+  "database.dbname": "${PG_DB}",
+  "database.sslmode": "require",
+  "topic.prefix": "desafio",
+  "table.include.list": "public.customers,public.accounts,public.cards,public.merchants,public.transactions",
+  "slot.name": "desafio_slot",
+  "publication.name": "desafio_pub",
+  "publication.autocreate.mode": "disabled",
+  "output.key.format": "AVRO",
+  "output.data.format": "AVRO",
+  "after.state.only": "false",
+  "tombstones.on.delete": "true",
+  "heartbeat.interval.ms": "60000",
+  "tasks.max": "1"
+}
