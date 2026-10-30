@@ -1,0 +1,3 @@
+﻿      ID      |         Name         | Status  |  Type  | Trace  
+--------------+----------------------+---------+--------+--------
+  lcc-0xyyrr2 | desafio-cdc-postgres | RUNNING | source |        

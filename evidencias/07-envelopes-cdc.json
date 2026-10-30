@@ -1,0 +1,131 @@
+{
+  "before": null,
+  "after": {
+    "desafio.public.transactions.Value": {
+      "transaction_id": 501,
+      "card_id": 10,
+      "account_id": 10,
+      "merchant_id": 5,
+      "amount": "89.90",
+      "currency": "BRL",
+      "created_at": "2026-10-30T20:31:43.074631Z"
+    }
+  },
+  "source": {
+    "version": "3.2.5.Final",
+    "connector": "postgresql",
+    "name": "desafio",
+    "ts_ms": 1793392303075,
+    "snapshot": {
+      "string": "false"
+    },
+    "db": "neondb",
+    "sequence": {
+      "string": "[null,\"29390208\"]"
+    },
+    "schema": "public",
+    "table": "transactions",
+    "txId": {
+      "long": 2095
+    },
+    "lsn": {
+      "long": 29390208
+    },
+    "xmin": null
+  },
+  "op": "c",
+  "ts_ms": {
+    "long": 1793392303294
+  },
+  "transaction": null
+}
+{
+  "before": {
+    "desafio.public.transactions.Value": {
+      "transaction_id": 500,
+      "card_id": 9,
+      "account_id": 9,
+      "merchant_id": 5,
+      "amount": "97.88",
+      "currency": "BRL",
+      "created_at": "2026-10-30T20:26:25.195131Z"
+    }
+  },
+  "after": null,
+  "source": {
+    "version": "3.2.5.Final",
+    "connector": "postgresql",
+    "name": "desafio",
+    "ts_ms": 1793392303459,
+    "snapshot": {
+      "string": "false"
+    },
+    "db": "neondb",
+    "sequence": {
+      "string": "[\"29391128\",\"29391128\"]"
+    },
+    "schema": "public",
+    "table": "transactions",
+    "txId": {
+      "long": 2097
+    },
+    "lsn": {
+      "long": 29391128
+    },
+    "xmin": null
+  },
+  "op": "d",
+  "ts_ms": {
+    "long": 1793392303868
+  },
+  "transaction": null
+}
+{
+  "before": {
+    "desafio.public.accounts.Value": {
+      "account_id": 3,
+      "customer_id": 3,
+      "status": "ACTIVE",
+      "credit_limit": "13011.06",
+      "risk_level": "LOW",
+      "updated_at": "2026-10-30T20:26:24.581372Z"
+    }
+  },
+  "after": {
+    "desafio.public.accounts.Value": {
+      "account_id": 3,
+      "customer_id": 3,
+      "status": "BLOCKED",
+      "credit_limit": "13011.06",
+      "risk_level": "LOW",
+      "updated_at": "2026-10-30T20:26:24.581372Z"
+    }
+  },
+  "source": {
+    "version": "3.2.5.Final",
+    "connector": "postgresql",
+    "name": "desafio",
+    "ts_ms": 1793392303251,
+    "snapshot": {
+      "string": "false"
+    },
+    "db": "neondb",
+    "sequence": {
+      "string": "[\"29390616\",\"29390912\"]"
+    },
+    "schema": "public",
+    "table": "accounts",
+    "txId": {
+      "long": 2096
+    },
+    "lsn": {
+      "long": 29390912
+    },
+    "xmin": null
+  },
+  "op": "u",
+  "ts_ms": {
+    "long": 1793392303361
+  },
+  "transaction": null
+}
